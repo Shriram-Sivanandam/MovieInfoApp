@@ -18,7 +18,7 @@ function App() {
                     <div className="card__oneLiners">
                       <h4>Year of Release: { card.year }</h4>
                       <h4>Screen Runtime: { card.runtime }</h4>
-                      <h4>Genres: { card.genres }</h4>
+                      <h4>Genres: { card.genres.map(item => `${item} `) }</h4>
                       <h4>Directed by: { card.director }</h4>
                       <h4>Cast: { card.actors }</h4>
                     </div>
