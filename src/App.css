@@ -4,8 +4,20 @@
   box-sizing: border-box;
 }
 
+.app {
+  background-color: #181818;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows:auto;
+  /* grid-auto-rows: 850px 850px; */
+}
+
 .card__movie {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: #181818;
   color: white;
   padding: 20px;
@@ -44,4 +56,15 @@
 
 .card__summary {
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app {
+    background-color: #ffffff;
+  }
 }
